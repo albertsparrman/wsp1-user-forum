@@ -1,0 +1,49 @@
+html {
+  background-color: rgb(235, 235, 235);
+  color: rgb(34, 34, 34);
+  font-family: "Roboto", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.beans {
+  width: 30rem;
+  background-color: rgb(239, 239, 239);
+  border: 1.6px solid rgb(196, 196, 196);
+  border-radius: 4px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top > h2 {
+  font-size: 1.2rem;
+}
+
+.username {
+  font-size: 0.8rem;
+}
+
+.date {
+  color: rgb(142, 142, 142);
+  font-size: 0.8rem;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1.6px solid rgb(196, 196, 196);
+}
+
+.bottom > div {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

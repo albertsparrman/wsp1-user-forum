@@ -3,22 +3,42 @@
 <main class="container mt-3">
     <h1>{{ title }}</h1>
     <a href="/new">Nytt inlägg</a>
+    <a href="/logout">Logga ut</a>
     <div class="sak">
     {% for row in rows %}
         <div class="beans">
             <div class="top">
-                <p class="username">
-                    @{{ row.name }}
-                </p>
                 <h2>
                     {{ row.title }}
                 </h2>
+                <p class="username">
+                    @{{ row.name }}
+                </p>
             </div>
             <p>
                 {{ row.content }}
             </p>
+            <p class="date">
+                {{ row.createdAt }}
+            </p>
+            <div class="bottom">
+                <div>
+                    <button>like</button>
+                    <p>0</p>
+                </div>
+                <div>
+                    <button>like</button>
+                    <p>0</p>
+                </div>
+                <div>
+                    <button>like</button>
+                    <p>0</p>
+                </div>
+                <button>report</button>
+            </div>
         </div>
     {% endfor %}
+    
 </div>
 </main>
 {% endblock %}

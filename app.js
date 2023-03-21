@@ -9,6 +9,7 @@ const session = require('express-session')
 const indexRouter = require('./routes/index');
 
 const app = express();
+const port = 3000;
 
 app.use(session({       //Sessionens inställningar
     secret: "thisismysecrctekeyfhrgfgrfrty84fwir767",
