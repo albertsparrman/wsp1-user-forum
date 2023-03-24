@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
+const validator = require('validator');
 
 const db = require('../utils/database');
+const { response } = require('../app');
 const promisePool = db.promise();
 
 
@@ -12,7 +14,6 @@ const promisePool = db.promise();
 
 router.get('/', async function (req, res, next) {
     const [rows] = await promisePool.query("SELECT asforum.*, asuser.name FROM asforum JOIN asuser ON asforum.authorId = asuser.id");
-   
     res.render('index.njk', {
         rows: rows,
         title: 'Forum',
@@ -145,5 +146,7 @@ router.get('/crypt/:password', async function (req, res, next) {
     });
 
 })
+
+
 
 module.exports = router;

@@ -1,8 +1,15 @@
 @use "reset";
 
+.container {
+    max-width: min(80ch, 100vw);
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
 .beans{
-    width: 30rem;
-    background-color: rgb(239, 239, 239);
+    width: 92%;
+    margin: 20px 4%;
+    background-color: rgb(242, 242, 242);
     border: 1.6px solid rgb(196, 196, 196);
     border-radius: 4px;
 }
@@ -13,8 +20,10 @@
     justify-content: space-between;
 }
 
-.top > h2 {
+.top > a {
     font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
 }
 .username {
     font-size: 0.8rem;
@@ -34,4 +43,10 @@
 
 .bottom > div {
     display: flex;
+}
+
+.text {
+    margin: 3px 12px;
+    max-height: 10rem;
+    overflow: auto;
 }
