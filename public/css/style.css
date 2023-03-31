@@ -1,7 +1,7 @@
 html {
   background-color: rgb(244, 244, 244);
   color: rgb(34, 34, 34);
-  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -13,6 +13,31 @@ html, body {
   max-width: min(80ch, 100vw);
   margin-inline: auto;
   padding-inline: 1rem;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+nav {
+  font-family: "Abril Fatface", cursive;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  border-bottom: 1.6px solid rgb(196, 196, 196);
+  padding: 1.3rem 4rem;
+}
+nav a {
+  color: #dbcd31;
+  text-decoration: none;
+  transition: 0.2s;
+}
+nav a:hover {
+  color: #bde2d3;
 }
 
 .beans {
@@ -35,6 +60,11 @@ html, body {
   text-decoration: none;
 }
 
+.title, .username {
+  margin: 14px 12px;
+  margin-top: 18px;
+}
+
 .username {
   font-size: 0.8rem;
 }
@@ -42,6 +72,7 @@ html, body {
 .date {
   color: rgb(142, 142, 142);
   font-size: 0.8rem;
+  margin: 10px 12px;
 }
 
 .bottom {
@@ -56,7 +87,7 @@ html, body {
 }
 
 .text {
-  margin: 3px 12px;
+  margin: 0px 12px;
   max-height: 10rem;
   overflow: auto;
 }

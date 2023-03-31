@@ -1,14 +1,11 @@
 {% extends "layout.njk" %}
 {% block  content %}
 <main class="container mt-3">
-    <h1>{{ title }}</h1>
-    <a href="/new">Nytt inlägg</a>
-    <a href="/logout">Logga ut</a>
     <div class="sak">
     {% for row in rows %}
         <div class="beans">
             <div class="top">
-                <a href="">
+                <a class="title" href="">
                     {{ row.title }}
                 </a>
                 <p class="username">
@@ -38,7 +35,19 @@
             </div>
         </div>
     {% endfor %}
-    
+    <a id="scroll-top" href="#">Back to top</a>
+    <button onclick="hahaha()" class="to-top">beans</button>
+    <script>
+        let mybutton = document.getElementsByClass("scroll-top");
+
+        window.onscroll = function() {hahaha()};
+
+        function hahaha(){
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                alert("be");
+            } 
+        }
+    </script>
 </div>
 </main>
 {% endblock %}

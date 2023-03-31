@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const nunjucks = require('nunjucks');
 const session = require('express-session')
+var validator = require('validator')
 
 const indexRouter = require('./routes/index');
 

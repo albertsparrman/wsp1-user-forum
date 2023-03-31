@@ -1,0 +1,15 @@
+<nav>
+    <a href="/">Hem</a>
+    
+    {% if user %}
+        <div>
+            <a href="/new">Nytt inlägg</a>
+            <a href="/profile">Profil</a>
+        </div>
+    {% else %}
+        <div>
+            <a href="/login">Logga in</a>
+            <a href="/register">Registrera</a>
+        </div>
+    {% endif %}
+</nav>
