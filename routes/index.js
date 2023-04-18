@@ -12,7 +12,7 @@ const promisePool = db.promise();
 
 
 router.get('/', async function (req, res, next) {
-    const [rows] = await promisePool.query("SELECT asforum.*, asuser.name FROM asforum JOIN asuser ON asforum.authorId = asuser.id");
+    const [rows] = await promisePool.query("SELECT asforum.*, asuser.name FROM asforum JOIN asuser ON asforum.authorId = asuser.id ORDER BY createdAt DESC");
     res.render('index.njk', {
         rows: rows,
         title: 'Forum',

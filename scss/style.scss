@@ -12,20 +12,25 @@
     left: 0;
 }
 
+p {
+    font-weight: 200;
+}
+
+a   {
+    color: #efefef;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 nav {
-    font-family: 'Abril Fatface', cursive;
     display: flex;
     position: sticky;
     top: 0;
     justify-content: space-between;
     font-size: 1.3rem;
-    border-bottom: 1.6px solid rgb(196, 196, 196);
-    a   {
-        color: #242424;
-        text-decoration: none;
-    }
+    background-color: rgb(250, 87, 215);
     a:hover {
-        color: #bde2d3;
+        color: #f0e0ed;
     }
     padding: 1.3rem 4rem;
 }
@@ -33,8 +38,8 @@ nav {
 .beans{
     width: 92%;
     margin: 20px 4%;
-    background-color: rgb(242, 242, 242);
-    border: 1.6px solid rgb(196, 196, 196);
+    background-color: rgb(31, 30, 32);
+    border: 1.6px solid rgb(58, 58, 58);
     border-radius: 4px;
 }
 
@@ -46,7 +51,7 @@ nav {
 
 .top > a {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -55,21 +60,23 @@ nav {
     margin-top: 18px;
 }
 
+
 .username {
     font-size: 0.8rem;
 }
 
 .date {
-    color: rgb(142, 142, 142);
+    color: rgb(118, 118, 118);
     font-size: 0.8rem;
     margin: 10px 12px;
+    font-weight: 500;
 }
 
 .bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1.6px solid rgb(196, 196, 196);
+    border-top: 1.6px solid rgb(58, 58, 58);
 }
 
 .bottom > div {
@@ -80,4 +87,10 @@ nav {
     margin: 0px 12px;
     max-height: 10rem;
     overflow: auto;
+}
+
+button {
+    background-color: rgb(31, 30, 32);
+    border: 1.6px solid rgb(58, 58, 58);
+    color: rgb(250, 87, 215);
 }
